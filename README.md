@@ -1,35 +1,45 @@
 # SynBioPython
 
 [![Build Status](https://travis-ci.org/Global-Biofoundries-Alliance/SynBioPython.svg?branch=master)](https://travis-ci.org/Global-Biofoundries-Alliance/SynBioPython)
-[![Coverage Status](https://coveralls.io/repos/github/Global-Biofoundries-Alliance/SynBioPython/badge.svg?branch=master)](https://coveralls.io/github/Global-Biofoundries-Alliance/SynBioPython?branch=master)
+![](https://img.shields.io/badge/python-3.6%20%7C%203.7%20%7C%203.8-blue)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Global-Biofoundries-Alliance/SynBioPython/master?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FGlobal-Biofoundries-Alliance%252FSynBioPython%252Ftree%252Fmaster%252Fexamples%26urlpath%3Dtree%252Fexamples%252Findex.ipynb%26branch%3Dmaster)
 
-Synbiopython will provide generic tools for Synthetic Biology.
+Synbiopython provides generic tools for Synthetic Biology.
 
-Installation
-------------
 
-To install the latest version from Github
+## Installation
 
+```bash
+pip install synbiopython
+```
+
+To install the latest version from Github:
 ```
 pip install --user git+https://github.com/Global-Biofoundries-Alliance/SynBioPython
 ```
+Currently Python 3.6, 3.7 and 3.8 are supported.
 
-To install for development, clone the repository into the folder of your choice and install with:
 
-```
-pip install --user -e .
-```
+## Usage
 
 You should now be able to run this in Python:
 
-```
-python
+```python
 import synbiopython
 print(synbiopython.__version__)
 ```
 
-Contribute!
------------
+Currently, there are three modules implemented:
+- The genbabel module provides standard file parsers and for working with multiple fileformats.
+- The codon module provides support for codon optimisation.
+- The lab automation module enables working with plates and generation of picklists (transfers) for liquid handlers.
 
-SynBioPython is developed collectively by members of the Global Biofoundries
-Alliance and released on Github under the MIT license. Contributions are welcome!
+
+### Examples
+
+Example Jupyter notebooks are provided for each module: [codon](https://github.com/Global-Biofoundries-Alliance/SynBioPython/blob/master/examples/codon.ipynb), [genbabel](https://github.com/Global-Biofoundries-Alliance/SynBioPython/blob/master/examples/genbabel.ipynb) and [lab automation](https://github.com/Global-Biofoundries-Alliance/SynBioPython/blob/master/examples/lab_automation.ipynb). In order to open these notebooks, download and install [JupyterLab](https://jupyterlab.readthedocs.io).
+
+
+## Contribute!
+
+SynBioPython is developed collectively by members of the Global Biofoundry Alliance and released on Github under the MIT license. Contributions are welcome!
